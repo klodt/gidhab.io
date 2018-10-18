@@ -1,2 +1,2 @@
-# klodt.github.io
+# klodt.github.com
 мой первый проект
