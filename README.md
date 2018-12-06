@@ -1,3 +1,3 @@
-# klodt.gidhab.io
+# klodt.github.io
 
 мой первый проект
