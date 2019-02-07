@@ -43,7 +43,7 @@ function er1(){
 var canvas = document.getElementById('example'); 
 var ctx = canvas.getContext('2d'); 
 ctx.beginPath();
-drawpoint();
+
 ctx.moveTo(0, 60);
 ctx.lineTo(480, 60);
 ctx.moveTo(140, 0);
@@ -59,6 +59,7 @@ if (x*x+y*y<=1 && y>=x|| x>=-1 && y<=1 && x<=0 && y>=0) {
   alert( 'Точка в области' );
 } else {
   alert( 'Точка не в области' ); 
+  drawpoint(); 
 }
 } 
 function drawpoint() { 
