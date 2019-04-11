@@ -1,0 +1,117 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="style2.css">
+  <script>
+
+  
+  var checkbox = document.getElementById("chbx1");
+  var checkbox = document.getElementById("chbx2");
+  var checkbox = document.getElementById("chbx3");
+  var checkbox = document.getElementById("chbx4");
+
+
+ function foo(){
+   if(checkbox.checked=true){
+       func1()
+         } }
+         
+         function foo2(){
+   if(checkbox.checked=true){
+       func2()
+         } }
+  
+   function foo3(){
+   if(checkbox.checked=true){
+       func3()
+         } }
+  
+   function foo4(){
+   if(checkbox.checked=true){
+       func4()
+         } }
+  
+    function func1() {
+    document.getElementById("otvet1").innerHTML =""
+      var i = 20;
+      while (i <= 35) {
+        document.getElementById("otvet1").innerHTML = document.getElementById("otvet1").innerHTML + i + "<br>";
+        i++;
+      }
+    }
+    function func2() {
+      n = Number(document.getElementById("b_f2_znach").value);
+      var i = 10;
+      while (i <= n) {
+        document.getElementById("otvet2").innerHTML = document.getElementById("otvet2").innerHTML + i*i + "<br>";
+        i++;
+      } 
+    }
+    function func3() {
+      n = Number(document.getElementById("n_f3_znach").value);
+      var i = n;
+      while (i <= 50) {
+        document.getElementById("otvet3").innerHTML = document.getElementById("otvet3").innerHTML + i*i*i + "<br>";
+        i++;
+      }
+    }
+   
+       function func4() {
+      a = Number(document.getElementById("n_f4_znach").value);
+       b = Number(document.getElementById("n_f5_znach").value);
+      var i = a;
+      while (i <= b) {
+        document.getElementById("otvet4").innerHTML = document.getElementById("otvet4").innerHTML + i + "<br>";
+        i++;
+      } 
+    }
+    
+  </script>
+</head>
+
+<body>
+
+
+  <h1>Целые числа от 20 до 35</h1> 
+ <span class="toggle">
+
+   <input type="checkbox" id="chbx1" onchange="func1()">
+    <label data-off="&#10006;" data-on="&#10004;"></label></span>
+  <div id="otvet1"></div>
+  
+<br>
+  <br>
+  <br>
+  <br>
+  <h1>квадраты целых чисел от 10 до b>=10</h1> 
+  b= <input type="text" value="34" id="b_f2_znach">
+  <span class="toggle">
+     <input type="checkbox" id="chbx2" onchange="func2()">
+ <label data-off="&#9724;" data-on="&#9654;"></label></span>
+  <div id="otvet2"></div>
+  
+<br>
+  <br>
+  <br>
+  <br>
+ <h1>кубы целых чисел от a<=50 до 50</h1> 
+  а=<input type="text" value="29" id="n_f3_znach">
+  <span class="toggle">
+ <input type="checkbox" id="chbx2" onchange="func3()">
+<label data-off="1" data-on="2"></label></span>
+  <div id="otvet3"></div>
+<br>
+<br>
+  <br>
+  <br>
+  <br>
+   <h1>целые числа от а до b</h1> 
+    a= <input type="text" value="5" id="n_f4_znach">
+  b= <input type="text" value="10" id="n_f5_znach">
+  
+    <span class="toggle">
+       <input type="checkbox" id="chbx2" onchange="func4()">
+ <label data-off="костер" data-on="снимки"></label></span>
+  <div id="otvet4"></div>
+</body>
+</html>
