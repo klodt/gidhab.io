@@ -1,0 +1,34 @@
+
+<html>
+
+<head>
+  <link rel="stylesheet" href="style2.css">
+  <script>
+  
+  
+         
+         function func1() {
+      a = Number(document.getElementById("n_f1_znach").value);
+       b = Number(document.getElementById("n_f2_znach").value);
+      var i = a;
+      var S=0;
+      while (i < b) {
+        S=S+i;
+        document.getElementById("otvet1").innerHTML = document.getElementById("otvet1").innerHTML + i +" "+ S + "<br>";
+        i++;
+      } 
+    }
+    
+     </script>
+</head>
+
+<body>
+  
+   <h1>сумма целых чисел от а до b</h1> 
+    a= <input type="text" value="6" id="n_f1_znach">
+  b= <input type="text" value="9" id="n_f2_znach">
+  
+    <a href="#"  onclick="func1()" class="button9">кнопка</a>
+  <div id="otvet1"></div>
+</body>
+</html>
